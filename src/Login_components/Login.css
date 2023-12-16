@@ -1,0 +1,177 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#092635 no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    border-radius: 10px;
+    padding: 90px 50px;
+
+}
+form .burger{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+
+}
+.input-box input::placeholder{
+    color: #fff;
+}
+.input-box .icon{
+position: absolute;
+right: 20px;
+top: 50%;
+transform: translateY(-50%);
+font-size: 16px;
+}
+.wrapper button{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+
+} */
+
+
+
+
+
+
+
+/* model 1 */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Assets/pexels-valeria-boltneva-1199960.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.cover{
+    background-color: #ffffff48;
+    width: 30em;
+    height: 30em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid #45474B;
+
+}
+.cover h1{
+    color:#fff ;
+    font-weight: bolder;
+    line-height: 100%;
+}
+.underline{
+    width:80px;
+    height: 6px;
+    background: #fff;
+    border-radius: 9px;
+
+}
+input{
+    border: none;
+    background-color: rgba(194, 188, 188, 0.371);
+    height: 3em;
+    width: 70%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 2em;
+
+
+}
+input::placeholder{
+    color: #fff;
+    font-size: medium;
+}
+input:focus {
+    outline-color: #000000;
+
+}
+.login-btn{
+    width: 40%;
+    height: 3em;
+    background-color: rgb(216, 161, 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.login-btn:hover{
+    transform: scale(1.1);
+}
+.text{
+    position: relative;
+    bottom: -2em;
+    
+}
+
+
+
+
+
+
