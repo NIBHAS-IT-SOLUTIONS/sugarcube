@@ -1,0 +1,153 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap'); */
+
+/* #263043 */
+.header {
+    background: #0000;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    justify-content: space-around;
+    padding: 8px 7%;
+    border-bottom: 0.3rem solid #ffc107;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+
+.header .logo img {
+    max-width: 55px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    display: flex;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: #ffc107;
+    border-bottom: 0.2rem solid #ffc107;
+    padding-bottom: 0.5rem;
+}
+
+.header .main-icons div {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+
+}
+
+.header .main-icons .icons {
+    display: inline-block;
+}
+
+.header .main-icons div:hover {
+    color: #ffc107;
+}
+
+#menu-btn {
+    display: flex;
+}
+/* search bar */
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.header .search-form.active{
+    transform: scaleY(1);
+    
+}
+.header .search-form .search-box{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #0000;
+    padding: 1rem;
+    text-transform: none;
+}
+.header .search-form label{
+cursor: pointer;
+font-size: 2.2rem;
+margin-right: 1.5rem;
+color: #0000;
+}
+.header .search-form label:hover{
+    color: #ffc107;
+}
+
+/* cart */
+.header .cart-items-container {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #0000;
+    border: 1px solid #ffc107;
+    padding: 0 1.5rem;
+
+}
+
+.header .cart-items-container.active {
+    right: 0;
+}
+
+.header .cart-items-container .cart-item {
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.header .cart-items-container .cart-item .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #ffc107;
+
+}
+
+.header .cart-items-container .cart-item .fa-times:hover {
+    color: #B31312;
+}
+
+.header .cart-items-container .cart-item img {
+    height: 5rem;
+    border-radius: 20px 15px;
+}
+
+.header .cart-items-container .cart-item .cart-content .cart-price {
+    font-size: 1.1rem;
+    color: #ffc107;
+}
+
+.cart-items-container .cart-btn {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
