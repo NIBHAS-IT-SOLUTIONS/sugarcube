@@ -51,8 +51,8 @@ function Login() {
         <h1>Sugar <FaHamburger/> Cube</h1>
         <h1>Delights</h1>
         <div className='underline'></div>
-        <input type="text" placeholder='Username' />
-        <input type="password" placeholder='Password' />
+        <input className='login-inputs' type="text" placeholder='Username' />
+        <input className='login-inputs' type="password" placeholder='Password' />
         <div className="login-btn">Login</div>
 
         <div className="alt-login">

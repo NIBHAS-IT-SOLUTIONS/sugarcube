@@ -5,14 +5,36 @@ import { cart } from '../Main_page/Data'
 
 function Navbar() {
   const searchRef = useRef();
-const searchHandler =() => {
-  searchRef.current.classList.toggle('active')
-  
-}
-
   const cartRef = useRef();
+  const navbarRef = useRef();
+
+  const searchHandler = () => {
+    searchRef.current.classList.toggle('active')
+    cartRef.current.classList.remove('active')
+    navbarRef.current.classList.remove('active')
+
+
+
+  }
+
+
   const cartHandler = () => {
     cartRef.current.classList.toggle('active')
+    searchRef.current.classList.remove('active')
+    navbarRef.current.classList.remove('active')
+
+
+
+  };
+
+  const navbarHandler = () => {
+
+    navbarRef.current.classList.toggle('active')
+    cartRef.current.classList.remove('active')
+    searchRef.current.classList.remove('active')
+
+
+
   };
   return (
     <>
@@ -20,22 +42,21 @@ const searchHandler =() => {
         <a href="#" className='logo'>
           <img src={Logo} alt="" />
         </a>
-        <nav className='navbar'>
+        <nav className='navbar' ref={navbarRef}>
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#menu">Menu</a>
           <a href="#products">Products</a>
-          <a href="#review">Review</a>
           <a href="#contact">Contact</a>
-          <a href="#blogs">Blogs</a>
+        
 
         </nav>
         <div className="main-icons">
 
           <div className='icons'><i class="fas fa-search" onClick={searchHandler}></i></div>
           <div className='icons'><i class="fas fa-shopping-cart" onClick={cartHandler}></i></div>
-          <div className='icons'><i class="fas fa-bars" id='menu-bar'></i></div>
-
+          <div className='icons'><i class="fas fa-bars" id='menu-bar' onClick={navbarHandler}></i></div>
+ 
 
         </div>
         <div className='search-form' ref={searchRef}>
@@ -55,9 +76,8 @@ const searchHandler =() => {
                   <div className="cart-price">100₹</div>
                 </div>
               </div>
-            ))
-          }
-          <a href="#" className='checkout-btn'>Check out</a>
+            ))}
+          <button className='btn'>Check out</button>
         </div>
       </header>
     </>

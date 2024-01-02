@@ -1,0 +1,61 @@
+.menu-heading {
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 3rem;
+}
+
+.menu-heading span {
+    color: #ffc107;
+}
+.menu-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem , 2fr));
+    gap: 1.5rem;
+}
+.menu .menu-box .box{
+    padding: 1.5rem;
+    text-align: center;
+    border: 0.2rem solid #ffc107;
+}
+.menu .menu-box .box img{
+    height: 25rem;
+    border-radius: 10px;
+    
+}
+.menu .menu-box .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu .menu-box .box .menu-price{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+.menu .menu-box .box .menu-price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+.menu .menu-box .box:hover{
+    background: rgb(46, 36, 5);
+    transition: .5s;
+}
+.menu .menu-box .box a{
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: larger;
+    font-weight: lighter;
+    text-decoration: none;
+    background: #ffc107;
+    color: #000;
+
+}
+.menu .menu-box .box a:hover{
+    background: #ffbf00d0 ;
+}
+
+
