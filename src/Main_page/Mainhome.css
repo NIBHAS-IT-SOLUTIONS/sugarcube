@@ -1,8 +1,9 @@
 .main-home {
+   
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(90deg, rgb(0 0 0 / 90%), rgb(68 68 68 / 35%)), url(../Assets/main\ page\ burger.jpg) no-repeat;
+    background: linear-gradient(90deg, rgb(0 0 0 / 90%), rgb(68 68 68 / 35%)), url("https://i.postimg.cc/KvcWx1vm/main-page-burger.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -47,3 +48,4 @@
 background: #ffbf00d0;
 
 }
+

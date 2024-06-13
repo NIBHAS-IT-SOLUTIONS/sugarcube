@@ -3,11 +3,12 @@ import './Menu.css'
 import {menu} from '../Main_page/Data'
 
 function Menu() {
+
     return (
         <>
             <section className='menu' id='menu'>
                 <h1 className='menu-heading'>
-                    Our <span>Top-selling</span> Delights
+                    Our <span>Best-selling</span> Items
                 </h1>
                 <div className='menu-box'>
                     {
@@ -18,14 +19,10 @@ function Menu() {
                                 <div className='menu-price'>
                                 ₹150 <span>200</span>
                                 </div>
-                                <a href="" className='menu-btn'>
-                                    add to cart
-                                </a>
+                               
                             </div>
                         ))
                     }
-
-
                 </div>
 
             </section>
@@ -34,3 +31,4 @@ function Menu() {
 }
 
 export default Menu
+

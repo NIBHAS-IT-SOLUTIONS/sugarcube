@@ -1,35 +1,47 @@
-.contact .row{
+body {
+    background-color: #191919;
+}
+
+.contact .row {
     display: flex;
     background: #191919;
     flex-wrap: wrap;
     gap: 1rem;
 }
-.contact .heading{
+
+.contact .heading {
+    background-color: #191919;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
-    padding: 2rem;
+    padding: 3rem;
 
 }
-.contact .heading span{
+
+.contact .heading span {
     color: #ffc107;
 }
-.contact .row .map{
+
+.contact .row .map {
     flex: 1 1 45rem;
     width: 100%;
     object-fit: cover;
 }
-.contact .row form{
+
+.contact .row form {
     flex: 1 1 45rem;
     padding: 2rem 1rem;
     text-align: center;
 }
-.contact .row form h3{
+
+.contact .row form h3 {
     text-transform: uppercase;
     color: #ffffff;
 }
-.contact .row form .inputBox{
+
+.contact .row form .inputBox {
+
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -37,12 +49,14 @@
     background: #191919;
     border: 0.1rem solid #ffc107;
 }
-.contact .row form .inputBox span{
+
+.contact .row form .inputBox span {
     color: #ffc107;
     font-size: 1.1rem;
     padding-left: 2rem;
 }
-.contact .row form .inputBox input{
+
+.contact .row form .inputBox input {
     width: 100%;
     padding: .7rem;
     font-size: 1rem;
@@ -52,11 +66,12 @@
     border: none;
     background-color: transparent;
 }
-.contact .row .btn{
+
+.contact .row .btn {
     width: 20%;
     height: 20%;
     font-size: 1rem;
     background: #ffc107;
-   border-radius: 50px;
-   cursor: pointer;
+    border-radius: 50px;
+    cursor: pointer;
 }

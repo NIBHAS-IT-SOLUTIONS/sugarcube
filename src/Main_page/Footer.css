@@ -5,6 +5,12 @@
     background: #191919;
     text-align: center;
   }
+  .footer .location{
+    color: #fff;
+  }
+  .footer .number{
+    color: #ffc107;
+  }
   
   .footer .share {
     padding: 1rem 0;
@@ -56,4 +62,7 @@
   .footer .credit span {
     color: #ffc107;
   }
+  
+
+
   

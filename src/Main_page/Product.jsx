@@ -21,21 +21,19 @@ function Product() {
                             <img src={item.img} alt="" />
                         </div>
                         <div className="product-content">
-                            <h3>....</h3>
-                            <div className="stars">
-                                <i className='fas fa-star'></i>
-                                <i className='fas fa-star'></i>
-                                <i className='fas fa-star'></i>
-                                <i className='fas fa-star'></i>
-                                <i className='fas fa-star-half-alt'></i>
-
-                            </div>
+                            <h3>product name</h3>
+                        
+                            
                             <div className="price">200</div>
+                            <a href="" className='menu-btn'>
+                                    Add to cart
+                                </a>
+                                
                         </div>
                     </div>
                   ))
                   }
-
+                
                 </div>
             </section>
         </>

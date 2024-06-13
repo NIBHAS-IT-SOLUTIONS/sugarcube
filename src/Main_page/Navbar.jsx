@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Logo from '../Assets/sugar-cube-high-resolution-logo-white.jpeg'
+// import Logo from '../Assets/sugar-cube-high-resolution-logo-white.jpeg'
 import './Navbar.css'
 import { cart } from '../Main_page/Data'
 
@@ -12,18 +12,12 @@ function Navbar() {
     searchRef.current.classList.toggle('active')
     cartRef.current.classList.remove('active')
     navbarRef.current.classList.remove('active')
-
-
-
   }
-
 
   const cartHandler = () => {
     cartRef.current.classList.toggle('active')
     searchRef.current.classList.remove('active')
     navbarRef.current.classList.remove('active')
-
-
 
   };
 
@@ -33,14 +27,12 @@ function Navbar() {
     cartRef.current.classList.remove('active')
     searchRef.current.classList.remove('active')
 
-
-
   };
   return (
     <>
       <header className='header'>
         <a href="#" className='logo'>
-          <img src={Logo} alt="" />
+          <img src="https://i.postimg.cc/QxbrqLVd/sugar-cube-high-resolution-logo-white.jpg" alt="" />
         </a>
         <nav className='navbar' ref={navbarRef}>
           <a href="#home">Home</a>
@@ -48,15 +40,18 @@ function Navbar() {
           <a href="#menu">Menu</a>
           <a href="#products">Products</a>
           <a href="#contact">Contact</a>
-        
+
 
         </nav>
         <div className="main-icons">
+         
+          
 
           <div className='icons'><i class="fas fa-search" onClick={searchHandler}></i></div>
           <div className='icons'><i class="fas fa-shopping-cart" onClick={cartHandler}></i></div>
           <div className='icons'><i class="fas fa-bars" id='menu-bar' onClick={navbarHandler}></i></div>
- 
+          <div className=''><i class="fas fa-boat"></i></div>
+
 
         </div>
         <div className='search-form' ref={searchRef}>
@@ -85,5 +80,8 @@ function Navbar() {
 }
 
 export default Navbar
+
+
+
 
 

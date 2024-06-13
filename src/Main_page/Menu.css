@@ -1,5 +1,6 @@
 .menu-heading {
-    padding: 2rem;
+    background-color: #191919;
+    padding: 3rem;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -11,6 +12,7 @@
     color: #ffc107;
 }
 .menu-box{
+    background-color: #191919;
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(30rem , 2fr));
     gap: 1.5rem;
@@ -29,6 +31,7 @@
     color: #fff;
     font-size: 2rem;
     padding: 1rem 0;
+
 }
 .menu .menu-box .box .menu-price{
     color: #fff;
@@ -44,18 +47,8 @@
     background: rgb(46, 36, 5);
     transition: .5s;
 }
-.menu .menu-box .box a{
-    padding: .5rem;
-    border-radius: .5rem;
-    font-size: larger;
-    font-weight: lighter;
-    text-decoration: none;
-    background: #ffc107;
-    color: #000;
 
-}
-.menu .menu-box .box a:hover{
-    background: #ffbf00d0 ;
-}
+
+
 
 

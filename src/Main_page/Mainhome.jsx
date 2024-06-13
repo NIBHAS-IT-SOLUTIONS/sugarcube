@@ -1,6 +1,8 @@
 import React from 'react'
 import './Mainhome.css'
+
 function Mainhome() {
+  
   return (
     <>
     <section className='main-home' id='home'>

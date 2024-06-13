@@ -4,18 +4,19 @@
     border: 0.1rem solid #ffc107;
 }
 .product-box{
-   
+   background-color: #191919;
     display: grid;
     grid-template-columns: repeat(auto-fit ,minmax(20rem , 2fr));
     gap: .5rem;
 }
 .product .product-heading{
+    background-color: #191919;
     padding: 2rem;
     color: #fff;
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
-    padding: .5rem ;
+    padding: 3rem ;
 
 }
 .product .product-heading span{
@@ -50,17 +51,25 @@
     color: #fff;
     font-size: 1.5rem;
 }
-.product .product-box .boxx .product-content .stars{
-    padding: .2rem;
-}
-.product .product-box .boxx .product-content .stars i{
-    font-size: 1.2rem;
-    color: #ffc107;
 
-}
 .product .product-box .boxx .product-content .price{
     color: #fff;
     font-size: 1.5rem;
+}
+.product .product-box .menu-btn{
+    padding: .5rem;
+    border-radius: .5rem;
+    font-size: larger;
+    font-weight: lighter;
+    text-decoration: none;
+    background: #ffc107;
+    color: #000;
+}
+.product .product-box .menu-btn:hover{
+    background: #ffbf00d0;
+}
+.product .product-content{
+    line-height: 2.2rem;
 }
 
 

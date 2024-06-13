@@ -1,4 +1,7 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+
 import React from 'react';
 import Login from './Login_components/Login';
 import { Route, Routes } from 'react-router-dom';
@@ -13,6 +16,8 @@ import Menu from './Main_page/Menu';
 import Product from './Main_page/Product';
 import Contact from './Main_page/Contact';
 import Footer from './Main_page/Footer';
+import Addproduct from './Main_page/Addproduct';
+import Payment from './Paymentpage/Payment';
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
@@ -23,30 +28,36 @@ function App() {
   }
   return (
 
-    <div className="app">
+    <div>
 
       <Routes>
+        {/* ========login======= */}
         <Route path="/" element={<Login />} />
 
 
-        <Route path='dashboard' element={<Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} />} />
-        <Route path='dashboard' element={<Home />} />
-        <Route path='dashboard' element={<Header OpenSidebar={OpenSidebar} />} />
-        
-        <Route path='main' element={<Navbar />} />
-        <Route path='main' element={<Mainhome/>}/>
-        <Route path='main' element={<About/>}/>
+
+
+        {/* =========dash board======== */}
+        {/* <Route path='dashboard' element={<><Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} /> <Home /> <Header OpenSidebar={OpenSidebar} /></>} /> */}
+
+        <Route path='dashboard' element={<><Header/><Sidebar/> <Home/></>} />
+        {/* <Route path='dashboard' element={} />  */}
 
 
 
+
+        {/* ========main======== */}
+        <Route path='main' element={<><Navbar/> <Mainhome/> <About/> <Menu/> <Product/> <Contact/> <Footer/> </>} />
+
+
+       <Route path='add' element={<Addproduct/>}/>
+       <Route path='itempayment' element={<Payment/>}/>
+ 
       </Routes>
-      <Mainhome/>
-      <About/>
-      <Menu/>
-      <Product/>
-      <Contact/>
-      <Footer/>
-     
+
+
+
+
 
     </div>
 
@@ -54,3 +65,7 @@ function App() {
 }
 
 export default App;
+
+
+
+

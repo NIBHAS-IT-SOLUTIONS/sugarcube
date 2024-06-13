@@ -29,9 +29,11 @@
 
 /*  */
 .about .about-heading {
+    color: #fff;
+    background-color: #191919;
     text-align: center;
     font-size: 3rem;
-    padding: 2rem;
+    padding: 3rem;
 }
 .about .about-heading span{
    color: #ffc107;

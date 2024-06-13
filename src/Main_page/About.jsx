@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import Aboutimg from '../Assets/aboutimg.jpg'
+// import Aboutimg from '../Assets/aboutimg.jpg'
 
 function About() {
     return (
@@ -11,12 +11,11 @@ function About() {
                 </h1>
                 <div className='about-row'>
                     <div className='about-img'>
-                        <img src={Aboutimg} alt="" />
+                        <img src="https://i.postimg.cc/wj2T3yDF/aboutimg.jpg" alt="" />
                     </div>
                     <div className='about-content'>
                         <h3> what makes us special</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores rem, qui assumenda nam omnis atque distinctio vero
-                             debitis ullam commodi at facilis sunt officiis impedit quos tenetur possimus molestiae praesentium!</p>
+                        <p>Cooking is a caring and nurturing act.It's a kind of the ultimate gift for someone,to cook for them</p>
                              <button className='about-btn'>Check Now!</button>
                     </div>
                 </div>
@@ -26,3 +25,5 @@ function About() {
 }
 
 export default About
+
+
